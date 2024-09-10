@@ -7,7 +7,7 @@
 
 int main(int argc, char* argv[]) {
 
-    auto model = Model::importModel("file.autism");
+    auto model = Model::importModel("file.model");
     std::cout << "Model loaded" << std::endl;
     const std::pair<std::vector<float>, size_t> Xdata = DataLoader::load("../x-preprocessed-data.csv");
     const std::pair<std::vector<float>, size_t> targetData = DataLoader::load("../y-preprocessed-data.csv");
