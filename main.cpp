@@ -42,6 +42,6 @@ int main() {
     TyreModel.selectOptimiser(std::make_unique<RMSPROP>(0.005));
     TyreModel.trainNetwork(X, Y, 100, 3);
 
-    TyreModel.save("file.autism");
+    TyreModel.save("file.model");
     std::cout << "Model Saved!";
 }
