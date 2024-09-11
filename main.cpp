@@ -8,12 +8,9 @@
  * */
 
 #include <iostream>
-#include <chrono>
 #include <OpenCL/opencl.h>
 
 #include "./neural-network/model.h"
-#include "./neural-network/test-and-gate.h"
-#include "./neural-network/visitor.h"
 #include "./data-interpretor/data-loader.h"
 
 
