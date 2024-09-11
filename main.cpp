@@ -13,10 +13,6 @@
 #include "./neural-network/model.h"
 #include "./data-interpretor/data-loader.h"
 
-
-// #undef USE_GPU
-
-
 int main() {
 
     /* Test Spanish GP tyre decay rate */
@@ -31,7 +27,6 @@ int main() {
 
     Model TyreModel = Model(14, TanH(0.01), std::make_unique<MSE>(0.1));
     TyreModel.addLayer(TanH(0.01), 64);
-    // TyreModel.addLayer(TanH(0.01), 128);
     TyreModel.addLayer(TanH(0.01), 64);
     TyreModel.addLayer(TanH(0.01), 9);
     TyreModel.addLayer(TanH(0.01), 3);
